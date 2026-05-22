@@ -26,6 +26,34 @@ const projects = [
       'Includes themed visual assets for a more complete game experience.',
     ],
   },
+  {
+    name: 'Mood Tracker',
+    type: 'React Application',
+    repository: 'https://github.com/billie89-33/week_09_Mood-Tracker',
+    liveDemo: 'https://week-09-mood-tracker.vercel.app',
+    description:
+      'A React mood tracking application that lets users select moods, attach dates, and manage a history list. The project focuses on component-based UI, state management, forms, and responsive styling.',
+    details: [
+      'Built with reusable React components for inputs, mood buttons, save actions, and history cards.',
+      'Uses props, useState, and event handlers to manage user interaction and app state.',
+      'Includes conditional rendering and dynamic lists to display saved mood history.',
+      'Styled with Tailwind CSS for a responsive user interface.',
+    ],
+  },
+  {
+    name: 'Colmar Academy',
+    type: 'CSS Layout Project',
+    repository: 'https://github.com/billie89-33/03-bank-colmar',
+    liveDemo: 'https://03-bank-colmar.vercel.app',
+    description:
+      'A CSS-focused landing page project based on the Colmar Academy layout. This project highlights page structure, visual spacing, typography, responsive layout work, and styling from provided design assets.',
+    details: [
+      'Built with HTML and CSS to practice page layout and visual hierarchy.',
+      'Uses real image and video assets across hero, information, course, and thesis sections.',
+      'Shows CSS skills in spacing, typography, responsive sections, and card-style content layouts.',
+      'Deployed as a live static page on Vercel.',
+    ],
+  },
 ]
 
 export default function FeaturedProject() {

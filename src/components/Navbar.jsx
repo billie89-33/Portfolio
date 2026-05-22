@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full border-b border-gray-700 bg-gray-900 text-white">
-      <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div className="flex w-full flex-col gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
         <div className="min-w-0">
           <NavLink to="/" className="block break-words font-mono text-sm font-semibold leading-6 sm:text-base xl:text-xl">
             <span className="text-[#569cd6]">const</span>{' '}

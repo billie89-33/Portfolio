@@ -1,12 +1,13 @@
 const techStack = [
-  { name: 'HTML', image: '' },
-  { name: 'CSS', image: '' },
-  { name: 'JavaScript', image: '' },
-  { name: 'React', image: '' },
-  { name: 'Node.js', image: '' },
-  { name: 'Express', image: '' },
-  { name: 'Axios', image: '' },
-  { name: 'MongoDB', image: '' },
+  { name: 'HTML', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+  { name: 'CSS', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+  { name: 'JavaScript', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+  { name: 'React', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+  { name: 'Node.js', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+  { name: 'Express', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+  { name: 'Axios', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/axios/axios-plain.svg' },
+  { name: 'MongoDB', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+  { name: 'GitHub', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
 ]
 
 export default function ProgrammingLanguage() {
@@ -26,7 +27,11 @@ export default function ProgrammingLanguage() {
             >
               <div className="flex h-full flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-teal-300/25 bg-gray-800/70 p-3 text-center sm:gap-4 sm:p-4">
                 {tech.image ? (
-                  <img src={tech.image} alt={`${tech.name} logo`} className="h-12 w-12 object-contain sm:h-16 sm:w-16" />
+                  <img
+                    src={tech.image}
+                    alt={`${tech.name} logo`}
+                    className={`h-12 w-12 object-contain sm:h-16 sm:w-16 ${['Express', 'Axios', 'GitHub'].includes(tech.name) ? 'brightness-0 invert' : ''}`}
+                  />
                 ) : (
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-300/10 text-base font-bold text-teal-300 sm:h-16 sm:w-16 sm:text-lg">
                     {tech.name.slice(0, 2).toUpperCase()}

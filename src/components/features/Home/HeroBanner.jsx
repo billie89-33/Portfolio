@@ -1,4 +1,5 @@
 import React from 'react'
+import avatarGif from '../../../assets/snorlax-snorlax-pokemon.gif'
 
 export default function HeroBanner() {
   return (
@@ -7,7 +8,7 @@ export default function HeroBanner() {
         <div className="relative flex w-full max-w-[400px] flex-col items-center rounded-[2rem] border border-teal-400/20 bg-gray-900/90 p-6 shadow-[0_30px_70px_-40px_rgba(0,0,0,0.8)] sm:p-10">
           <div className="pointer-events-none absolute inset-0 rounded-[2.5rem] border border-teal-400/10" />
           <div className="relative mb-6 flex h-40 w-40 items-center justify-center rounded-full bg-gray-700 sm:mb-8 sm:h-56 sm:w-56">
-            <img src="https://via.placeholder.com/140" alt="avatar" className="h-28 w-28 rounded-full object-cover sm:h-auto sm:w-auto" />
+            <img src={avatarGif} alt="Bovorn avatar" className="h-28 w-28 rounded-full object-cover sm:h-40 sm:w-40" />
           </div>
           <h3 className="relative text-3xl font-semibold sm:text-4xl">Bovorn</h3>
           <p className="relative mb-6 mt-2 text-lg text-gray-300 sm:mb-8 sm:text-xl">Full-stack developer</p>
@@ -39,7 +40,7 @@ export default function HeroBanner() {
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            {['HTML', 'CSS', 'JS', 'REACT', 'Node.js', 'Express', 'Axios', 'MongoDB'].map((skill) => (
+            {['HTML', 'CSS', 'JS', 'REACT', 'Node.js', 'Express', 'Axios', 'MongoDB', 'GitHub'].map((skill) => (
               <span key={skill} className="rounded-full bg-teal-300/10 px-4 py-2 text-sm text-teal-300 ring-1 ring-teal-300/25">
                 {skill}
               </span>
@@ -114,7 +115,7 @@ export default function HeroBanner() {
             href="#tech-stack"
             className="rounded-3xl bg-gray-900 p-6 text-center text-teal-300 shadow-xl transition hover:-translate-y-1 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-teal-300 sm:p-8 xl:p-12"
           >
-            <div className="text-4xl font-bold sm:text-5xl xl:text-6xl">8</div>
+            <div className="text-4xl font-bold sm:text-5xl xl:text-6xl">9</div>
             <div className="mt-4 text-sm text-white sm:text-base xl:mt-6">Tech Stack</div>
           </a>
           <a
@@ -128,7 +129,7 @@ export default function HeroBanner() {
             href="#featured-project"
             className="rounded-3xl bg-gray-900 p-6 text-center text-teal-300 shadow-xl transition hover:-translate-y-1 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-teal-300 sm:p-8 xl:p-12"
           >
-            <div className="text-4xl font-bold sm:text-5xl xl:text-6xl">2</div>
+            <div className="text-4xl font-bold sm:text-5xl xl:text-6xl">4</div>
             <div className="mt-4 text-sm text-white sm:text-base xl:mt-6">Featured Projects</div>
           </a>
         </aside>
