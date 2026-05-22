@@ -2,31 +2,31 @@ import React from 'react'
 
 export default function HeroBanner() {
   return (
-    <section className="bg-gray-800 flex items-center justify-center w-screen">
-      <div className="text-white flex items-center justify-center gap-25 w-full max-w-[1400px] px-5 py-15 mx-auto flex-wrap">
-        <div className="relative flex flex-col items-center w-[360px] rounded-[2.5rem] border border-teal-400/20 bg-gray-900/90 p-10 shadow-[0_30px_70px_-40px_rgba(0,0,0,0.8)]">
+    <section className="flex w-full items-center justify-center overflow-x-hidden bg-gray-800">
+      <div className="mx-auto flex w-full max-w-[1400px] flex-col items-center justify-center gap-8 px-4 py-10 text-white sm:px-5 sm:py-14 lg:gap-12 xl:flex-row xl:gap-20">
+        <div className="relative flex w-full max-w-[400px] flex-col items-center rounded-[2rem] border border-teal-400/20 bg-gray-900/90 p-6 shadow-[0_30px_70px_-40px_rgba(0,0,0,0.8)] sm:p-10">
           <div className="pointer-events-none absolute inset-0 rounded-[2.5rem] border border-teal-400/10" />
-          <div className="relative rounded-full bg-gray-700 w-56 h-56 flex items-center justify-center mb-8">
-            <img src="https://via.placeholder.com/140" alt="avatar" className="rounded-full" />
+          <div className="relative mb-6 flex h-40 w-40 items-center justify-center rounded-full bg-gray-700 sm:mb-8 sm:h-56 sm:w-56">
+            <img src="https://via.placeholder.com/140" alt="avatar" className="h-28 w-28 rounded-full object-cover sm:h-auto sm:w-auto" />
           </div>
-          <h3 className="relative text-4xl font-semibold">Bovorn</h3>
-          <p className="relative text-xl text-gray-300 mt-2 mb-8">Full-stack developer</p>
+          <h3 className="relative text-3xl font-semibold sm:text-4xl">Bovorn</h3>
+          <p className="relative mb-6 mt-2 text-lg text-gray-300 sm:mb-8 sm:text-xl">Full-stack developer</p>
 
-          <div className="relative w-full space-y-4 text-left">
-            <div className="flex items-center gap-3 text-sm text-gray-300">
-              <span className="text-teal-300">✉</span>
+          <div className="relative w-full space-y-5 text-left">
+            <div className="flex items-center gap-4 text-base text-gray-300 sm:text-sm">
+              <span className="text-lg text-teal-300 sm:text-base">✉</span>
               <span>Bowvorn@gmail.com</span>
             </div>
-            <div className="flex items-center gap-3 text-sm text-gray-300">
-              <span className="text-teal-300">📍</span>
+            <div className="flex items-center gap-4 text-base text-gray-300 sm:text-sm">
+              <span className="text-lg text-teal-300 sm:text-base">📍</span>
               <span>Thailand</span>
             </div>
-            <div className="flex items-center gap-3 text-sm text-gray-300">
-              <span className="text-teal-300">💼</span>
+            <div className="flex items-center gap-4 text-base text-gray-300 sm:text-sm">
+              <span className="text-lg text-teal-300 sm:text-base">💼</span>
               <span>Full-time </span>
             </div>
-            <div className="flex items-center gap-3 text-sm text-gray-300">
-              <span className="text-teal-300">🔗</span>
+            <div className="flex items-center gap-4 text-base text-gray-300 sm:text-sm">
+              <span className="text-lg text-teal-300 sm:text-base">🔗</span>
               <a
                 href="https://github.com/billie89-33"
                 target="_blank"
@@ -51,10 +51,10 @@ export default function HeroBanner() {
           </button>
         </div>
 
-        <div className="flex-1 text-white min-w-min">
-          <div className="max-w-3xl rounded-3xl border border-teal-300/20 bg-[#1e1e1e] p-8 font-mono shadow-[0_30px_70px_-45px_rgba(20,184,166,0.65)]">
+        <div className="w-full min-w-0 flex-1 text-white">
+          <div className="w-full max-w-3xl rounded-3xl border border-teal-300/20 bg-[#1e1e1e] p-4 font-mono shadow-[0_30px_70px_-45px_rgba(20,184,166,0.65)] sm:p-6 lg:max-w-4xl lg:p-10">
             <p className="text-sm text-[#6a9955]">// portfolio.js</p>
-            <pre className="mt-5 overflow-x-auto whitespace-pre-wrap text-base leading-8 text-[#d4d4d4] md:text-lg">
+            <pre className="mt-5 overflow-x-auto whitespace-pre text-sm leading-7 text-[#d4d4d4] sm:text-base md:text-lg lg:overflow-visible lg:whitespace-pre-wrap lg:text-lg lg:leading-9">
               <code>
                 <span className="text-[#569cd6]">const</span>
                 <span> </span>
@@ -103,33 +103,33 @@ export default function HeroBanner() {
             href="https://mail.google.com/mail/?view=cm&fs=1&to=bowvorn@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex px-10 py-4 bg-teal-500 text-white rounded font-semibold text-lg hover:bg-teal-600 transition"
+            className="mt-8 inline-flex w-full justify-center rounded bg-teal-500 px-8 py-4 text-base font-semibold text-white transition hover:bg-teal-600 sm:w-auto sm:text-lg"
           >
             Let&apos;s Talk
           </a>
         </div>
 
-        <aside className="flex flex-col gap-10 w-64">
+        <aside className="grid w-full max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3 xl:w-64 xl:grid-cols-1 xl:gap-10">
           <a
             href="#tech-stack"
-            className="bg-gray-900 text-teal-300 rounded-3xl p-12 shadow-xl text-center transition hover:-translate-y-1 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-teal-300"
+            className="rounded-3xl bg-gray-900 p-6 text-center text-teal-300 shadow-xl transition hover:-translate-y-1 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-teal-300 sm:p-8 xl:p-12"
           >
-            <div className="text-6xl font-bold">8</div>
-            <div className="text-base text-white mt-6">Tech Stack</div>
+            <div className="text-4xl font-bold sm:text-5xl xl:text-6xl">8</div>
+            <div className="mt-4 text-sm text-white sm:text-base xl:mt-6">Tech Stack</div>
           </a>
           <a
             href="#development-tools"
-            className="bg-gray-900 text-teal-300 rounded-3xl p-12 shadow-xl text-center transition hover:-translate-y-1 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-teal-300"
+            className="rounded-3xl bg-gray-900 p-6 text-center text-teal-300 shadow-xl transition hover:-translate-y-1 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-teal-300 sm:p-8 xl:p-12"
           >
-            <div className="text-6xl font-bold">7</div>
-            <div className="text-base text-white mt-6">Development Tools</div>
+            <div className="text-4xl font-bold sm:text-5xl xl:text-6xl">7</div>
+            <div className="mt-4 text-sm text-white sm:text-base xl:mt-6">Development Tools</div>
           </a>
           <a
             href="#featured-project"
-            className="bg-gray-900 text-teal-300 rounded-3xl p-12 shadow-xl text-center transition hover:-translate-y-1 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-teal-300"
+            className="rounded-3xl bg-gray-900 p-6 text-center text-teal-300 shadow-xl transition hover:-translate-y-1 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-teal-300 sm:p-8 xl:p-12"
           >
-            <div className="text-6xl font-bold">2</div>
-            <div className="text-base text-white mt-6">Featured Projects</div>
+            <div className="text-4xl font-bold sm:text-5xl xl:text-6xl">2</div>
+            <div className="mt-4 text-sm text-white sm:text-base xl:mt-6">Featured Projects</div>
           </a>
         </aside>
       </div>
