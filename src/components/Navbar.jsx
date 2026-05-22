@@ -6,33 +6,38 @@ export default function Navbar() {
   const auth = useAuth()
 
   return (
-    <header className="w-full bg-gray-900 text-white">
-      <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <header className="w-full bg-gray-900 text-white border-b border-gray-700">
+      <div className="flex items-center justify-between px-8 py-4">
         <div className="flex items-center gap-4">
-          <NavLink to="/" className="text-2xl font-bold text-teal-300">&lt;C/&gt; Portfolio</NavLink>
+          <NavLink to="/" className="font-mono text-xl font-semibold">
+            <span className="text-[#569cd6]">const</span>{' '}
+            <span className="text-[#4fc1ff]">portfolio</span>{' '}
+            <span className="text-white">=</span>{' '}
+            <span className="text-[#ce9178]">&quot;software developer&quot;</span>
+          </NavLink>
         </div>
 
-        <nav className="flex-1 text-center">
-          <NavLink to="/" className={({isActive}) => `mx-4 ${isActive ? 'text-teal-300' : 'text-white'}`} end>Home</NavLink>
-          <NavLink to="/blog" className={({isActive}) => `mx-4 ${isActive ? 'text-teal-300' : 'text-white'}`}>Blog</NavLink>
+        <nav className="flex-1 text-center flex gap-8 justify-center">
+          <NavLink to="/" className={({isActive}) => `${isActive ? 'text-teal-300' : 'text-gray-300'} hover:text-teal-300`} end>Home</NavLink>
+          <NavLink to="/about-me" className={({isActive}) => `${isActive ? 'text-teal-300' : 'text-gray-300'} hover:text-teal-300`}>About Me</NavLink>
         </nav>
 
         <div className="flex items-center gap-4">
-          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-sm">Instagram</a>
-          <a href="https://discord.com" target="_blank" rel="noreferrer" className="text-sm">Discord</a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="text-sm">Github</a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-sm hover:text-teal-300">Instagram</a>
+          <a href="https://discord.com" target="_blank" rel="noreferrer" className="text-sm hover:text-teal-300">Discord</a>
+          <a href="https://github.com" target="_blank" rel="noreferrer" className="text-sm hover:text-teal-300">Github</a>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 ml-4 pl-4 border-l border-gray-700">
             {auth?.isAdmin ? (
-              <NavLink to="/admin" className="px-3 py-1 bg-gray-800 rounded">Admin</NavLink>
+              <NavLink to="/admin" className="px-3 py-1 bg-gray-800 rounded text-sm hover:bg-gray-700">Admin</NavLink>
             ) : null}
 
             <button
               onClick={() => auth?.toggleAdmin && auth.toggleAdmin()}
-              className="px-3 py-1 bg-teal-500 text-white rounded"
+              className="px-3 py-1 bg-teal-500 text-white rounded text-sm hover:bg-teal-600"
               title="Toggle admin (dev)"
             >
-              {auth?.isAdmin ? 'Switch to User' : 'Switch to Admin'}
+              {auth?.isAdmin ? 'User' : 'Admin'}
             </button>
           </div>
         </div>

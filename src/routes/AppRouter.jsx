@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import UserLayout from '../layouts/UserLayout'
 import AdminLayout from '../layouts/AdminLayout'
 import HomePage from '../pages/user/HomePage'
+import AboutMePage from '../pages/user/AboutMePage'
 import DashboardPage from '../pages/admin/DashboardPage'
 import ProtectedRoute from './ProtectedRoute'
 
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
     element: <UserLayout />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: 'blog', element: <div className="p-4">Blog (coming soon)</div> },
+      { path: 'about-me', element: <AboutMePage /> },
     ],
   },
   {
