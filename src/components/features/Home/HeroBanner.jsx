@@ -47,9 +47,14 @@ export default function HeroBanner() {
             ))}
           </div>
 
-          <button className="mt-10 w-full rounded-full bg-white py-3 text-sm font-semibold text-gray-900 shadow-lg transition hover:bg-gray-100">
+          <a
+            href="https://drive.google.com/file/d/1fKasR-63qkbdeDuqcGNwyUVwBARwRW-A/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 block w-full text-center rounded-full bg-white py-3 text-sm font-semibold text-gray-900 shadow-lg transition hover:bg-gray-100"
+          >
             Download CV
-          </button>
+          </a>
         </div>
 
         <div className="w-full min-w-0 flex-1 text-white">
