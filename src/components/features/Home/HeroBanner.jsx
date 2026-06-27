@@ -7,8 +7,8 @@ export default function HeroBanner() {
       <div className="mx-auto flex w-full max-w-[1400px] flex-col items-center justify-center gap-8 px-4 py-10 text-white sm:px-5 sm:py-14 lg:gap-12 xl:flex-row xl:gap-20">
         <div className="relative flex w-full max-w-[400px] flex-col items-center rounded-[2rem] border border-teal-400/20 bg-gray-900/90 p-6 shadow-[0_30px_70px_-40px_rgba(0,0,0,0.8)] sm:p-10">
           <div className="pointer-events-none absolute inset-0 rounded-[2.5rem] border border-teal-400/10" />
-          <div className="relative mb-6 flex h-40 w-40 items-center justify-center rounded-full bg-gray-700 sm:mb-8 sm:h-56 sm:w-56">
-            <img src={avatarImg} alt="Bovorn avatar" className="h-28 w-28 rounded-full object-cover sm:h-40 sm:w-40" />
+          <div className="relative mb-6 flex h-40 w-40 items-center justify-center rounded-full bg-gray-700 sm:mb-8 sm:h-56 sm:w-56 overflow-hidden">
+            <img src={avatarImg} alt="Bovorn avatar" className="h-full w-full rounded-full object-cover" />
           </div>
           <h3 className="relative text-3xl font-semibold sm:text-4xl">Bowvorn</h3>
           <p className="relative mb-6 mt-2 text-lg text-gray-300 sm:mb-8 sm:text-xl">Full-stack developer</p>
@@ -67,7 +67,7 @@ export default function HeroBanner() {
                 {'\n  '}
                 <span className="text-[#9cdcfe]">name</span>
                 <span className="text-[#d4d4d4]">: </span>
-                <span className="text-[#ce9178]">&quot;Bovorn&quot;</span>
+                <span className="text-[#ce9178]">&quot;Bowvorn&quot;</span>
                 <span className="text-[#d4d4d4]">,</span>
                 {'\n  '}
                 <span className="text-[#9cdcfe]">role</span>
