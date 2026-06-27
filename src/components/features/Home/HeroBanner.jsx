@@ -1,5 +1,5 @@
 import React from 'react'
-import avatarGif from '../../../assets/snorlax-snorlax-pokemon.gif'
+import avatarImg from '../../../assets/35362295_1828678877178722_6936296256608141312_n.jpg'
 
 export default function HeroBanner() {
   return (
@@ -8,7 +8,7 @@ export default function HeroBanner() {
         <div className="relative flex w-full max-w-[400px] flex-col items-center rounded-[2rem] border border-teal-400/20 bg-gray-900/90 p-6 shadow-[0_30px_70px_-40px_rgba(0,0,0,0.8)] sm:p-10">
           <div className="pointer-events-none absolute inset-0 rounded-[2.5rem] border border-teal-400/10" />
           <div className="relative mb-6 flex h-40 w-40 items-center justify-center rounded-full bg-gray-700 sm:mb-8 sm:h-56 sm:w-56">
-            <img src={avatarGif} alt="Bovorn avatar" className="h-28 w-28 rounded-full object-cover sm:h-40 sm:w-40" />
+            <img src={avatarImg} alt="Bovorn avatar" className="h-28 w-28 rounded-full object-cover sm:h-40 sm:w-40" />
           </div>
           <h3 className="relative text-3xl font-semibold sm:text-4xl">Bovorn</h3>
           <p className="relative mb-6 mt-2 text-lg text-gray-300 sm:mb-8 sm:text-xl">Full-stack developer</p>
