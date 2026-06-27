@@ -134,7 +134,7 @@ export default function HeroBanner() {
             href="#featured-project"
             className="rounded-3xl bg-gray-900 p-6 text-center text-teal-300 shadow-xl transition hover:-translate-y-1 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-teal-300 sm:p-8 xl:p-12"
           >
-            <div className="text-4xl font-bold sm:text-5xl xl:text-6xl">4</div>
+            <div className="text-4xl font-bold sm:text-5xl xl:text-6xl">5</div>
             <div className="mt-4 text-sm text-white sm:text-base xl:mt-6">Featured Projects</div>
           </a>
         </aside>

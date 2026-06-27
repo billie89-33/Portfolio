@@ -1,5 +1,19 @@
 const projects = [
   {
+    name: 'Creative Market',
+    type: 'Frontend Web Application',
+    repository: 'https://github.com/billie89-33/creative-market-front-end-sprint-2.git',
+    liveDemo: 'https://creative-market-front-end-sprint-2-mu.vercel.app/',
+    description:
+      'A frontend web application for a creative marketplace built during Sprint 2. This project emphasizes interactive user interfaces, clean component design, state management, and modern responsive web layouts.',
+    details: [
+      'Built as a fully responsive creative marketplace frontend.',
+      'Developed using modern React practices and component-driven architecture.',
+      'Focuses on smooth interactive user experiences and clean web styling.',
+      'Deployed live with continuous integration on Vercel.',
+    ],
+  },
+  {
     name: 'Project_JAMINE',
     type: 'GitHub Repository',
     repository: 'https://github.com/billie89-33/Project_JAMINE',
