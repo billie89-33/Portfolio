@@ -1,4 +1,4 @@
-import React from 'react'
+
 import avatarImg from '../../../assets/35362295_1828678877178722_6936296256608141312_n.jpg'
 
 export default function HeroBanner() {
@@ -10,7 +10,7 @@ export default function HeroBanner() {
           <div className="relative mb-6 flex h-40 w-40 items-center justify-center rounded-full bg-gray-700 sm:mb-8 sm:h-56 sm:w-56">
             <img src={avatarImg} alt="Bovorn avatar" className="h-28 w-28 rounded-full object-cover sm:h-40 sm:w-40" />
           </div>
-          <h3 className="relative text-3xl font-semibold sm:text-4xl">Bovorn</h3>
+          <h3 className="relative text-3xl font-semibold sm:text-4xl">Bowvorn</h3>
           <p className="relative mb-6 mt-2 text-lg text-gray-300 sm:mb-8 sm:text-xl">Full-stack developer</p>
 
           <div className="relative w-full space-y-5 text-left">
